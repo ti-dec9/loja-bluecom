@@ -1,0 +1,18 @@
+/* COLORS */
+
+.header-menu .header-menu-vertical .menu-title {
+    background-color: #344f96;
+}
+
+.header-tools .cart-info a:before,
+.search-element button {
+    background: #344f96;
+}
+
+.search-element input {
+    padding: 20px;
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+    padding: 20px;
+}
