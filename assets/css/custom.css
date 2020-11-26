@@ -1,16 +1,25 @@
 /* COLORS */
 
-.header-menu .header-menu-vertical .menu-title {
+.header-menu .header-menu-vertical .menu-title,
+.slider-area .bg-img .slider-content-1 a,
+#scrollUp {
     background-color: #344f96;
 }
 
 .header-tools .cart-info a:before,
-.search-element button {
+.news-letter-area,
+.search-element button,
+.list-product .cart-btn a.add-to-curt,
+.product-details-content .pro-details-quality .pro-details-cart a {
     background: #344f96;
 }
 
 .search-element input {
     padding: 20px;
+}
+
+.footer-tags .tag-content {
+    float: none;
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
