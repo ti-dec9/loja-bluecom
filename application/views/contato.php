@@ -54,7 +54,7 @@
                         <div class="breadcrumb-content">
                             <ul class="nav">
                                 <li><a href="index.html">Home</a></li>
-                                <li>Quem Somos</li>
+                                <li>Contato</li>
                             </ul>
                         </div>
                     </div>

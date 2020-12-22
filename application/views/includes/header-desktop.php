@@ -46,12 +46,12 @@
         <div class="header-top bg-white ptb-30px d-lg-block d-none">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 d-flex">
+                    <div class="col-md-2 d-flex">
                         <div class="logo align-self-center">
                             <a href="#"><img class="img-responsive" src="assets/images/logo/logo-bluecom.png" alt="logo.jpg" /></a>
                         </div>
                     </div>
-                    <div class="col-md-9 align-self-center">
+                    <div class="col-md-4 align-self-center justify-content-end">
                         <div class="header-right-element d-flex">
                             <div class="search-element media-body mr-20px">
                                 <form class="d-flex" action="#">
@@ -68,6 +68,26 @@
                             </div>-->
                         </div>
                         <!--Cart info End -->
+                    </div>
+                    <div class="col-md-6 align-self-center justify-content-end">
+                        <div class="brand-area">
+                            <div class="container">
+                                <div class="brand-slider brand-slider-header">
+                                    <div class="brand-slider-item" style="padding-right: 15px;">
+                                        <a href="#"><img class=" img-responsive" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/logo_vyper.png" alt="" /></a>
+                                    </div>
+                                    <div class="brand-slider-item" style="padding-right: 15px;">
+                                        <a href="#"><img class=" img-responsive" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/logo_lan.png" alt="" /></a>
+                                    </div>
+                                    <div class="brand-slider-item" style="padding-right: 15px;">
+                                        <a href="#"><img class=" img-responsive" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/logo_master.png" alt="" /></a>
+                                    </div>
+                                    <div class="brand-slider-item" style="padding-right: 15px;">
+                                        <a href="#"><img class=" img-responsive" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/logo_smart.png" alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

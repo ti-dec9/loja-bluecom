@@ -18,6 +18,11 @@
     padding: 20px;
 }
 
+.brand-slider-header {
+    padding: 0;
+    border: none;
+}
+
 .footer-tags .tag-content {
     float: none;
 }
