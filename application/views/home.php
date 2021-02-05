@@ -669,17 +669,17 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="banner-wrapper">
-                        <a href="#"><img src="assets/images/banner-image/5.jpg" alt="" /></a>
+                        <a href="https://transcend.us/"><img src="assets/images/banner-image/5.jpg" alt="Transcend" /></a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="banner-wrapper">
-                        <a href="#"><img src="assets/images/banner-image/6.jpg" alt="" /></a>
+                        <a href="https://lanexpert.com.br/"><img src="assets/images/banner-image/6.jpg" alt="Lan Expert" /></a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="banner-wrapper">
-                        <a href="#"><img src="assets/images/banner-image/7.jpg" alt="" /></a>
+                        <a href="https://gtshardsoft.com.br/"><img src="assets/images/banner-image/7.jpg" alt="GTS Hard Soft" /></a>
                     </div>
                 </div>
             </div>

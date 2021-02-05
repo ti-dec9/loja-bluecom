@@ -37,13 +37,13 @@
                         <div class="col-md-6 col-lg-4 mb-md-30px mb-lm-30px">
                             <div class="single-wedge">
                                 <div class="footer-logo">
-                                    <a href="#"><img class="img-responsive" src="assets/images/logo/logo-bluecom.png" style="width: 50%; height: auto" alt="logo.jpg" /></a>
+                                    <a href="#"><img class="img-responsive" src="<?php echo base_url(); ?>assets/images/logo/logo-bluecom.png" style="width: 50%; height: auto" alt="logo.jpg" /></a>
                                 </div>
                                 <p class="text-infor"></p>
                                 <div class="need_help">
-                                    <p class="add"><span class="address">Endereço:</span> Endereço</p>
-                                    <p class="mail"><span class="email">Email:</span> <a href="mailto:support@hasthemes.com">email@email.com.br</a></p>
-                                    <p class="phone"><span class="call us">Ligue agora:</span> <a href="tel:(00)123456789"> (00)123456789</a></p>
+                                    <p class="add"><span class="address">Endereço:</span> Av. ipiranga 1097 - 8ª andar, São Paulo - SP - CEP 01039-904</p>
+                                    <p class="mail"><span class="email">Email:</span> <a href="mailto:contato@bluecom.com.br">contato@bluecom.com.br</a></p>
+                                    <p class="phone"><span class="call us">Ligue agora:</span> <a href="tel:11991428186"> (11) 99142-8186</a></p>
                                 </div>
                             </div>
                         </div>
@@ -52,9 +52,9 @@
                                 <h4 class="footer-herading">Institucional</h4>
                                 <div class="footer-links">
                                     <ul>
-                                        <li><a href="#">Home</a></li>
-                                        <li><a href="about.html">Quem Somos</a></li>
-                                        <li><a href="contact.html">Contato</a></li>
+                                        <li><a href="<?php echo base_url(); ?>">Home</a></li>
+                                        <li><a href="#">Quem Somos</a></li>
+                                        <li><a href="#">Contato</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
                                                 <div class="footer-blog-post-top">
                                                     <div class="post-thumbnail">
                                                         <a href="blog-single-left-sidebar.html">
-                                                            <img src="assets/images/blog-image/blog-8.jpg" alt="">
+                                                            <img src="<?php echo base_url(); ?>assets/images/blog-image/blog-8.jpg" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -100,7 +100,7 @@
                                                 <div class="footer-blog-post-top">
                                                     <div class="post-thumbnail">
                                                         <a href="blog-single-left-sidebar.html">
-                                                            <img src="assets/images/blog-image/blog-9.jpg" alt="">
+                                                            <img src="<?php echo base_url(); ?>assets/images/blog-image/blog-9.jpg" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -118,7 +118,7 @@
                                                 <div class="footer-blog-post-top">
                                                     <div class="post-thumbnail">
                                                         <a href="#">
-                                                            <img src="assets/images/blog-image/blog-10.jpg" alt="">
+                                                            <img src="<?php echo base_url(); ?>assets/images/blog-image/blog-10.jpg" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -133,7 +133,7 @@
                                                 <div class="footer-blog-post-top">
                                                     <div class="post-thumbnail">
                                                         <a href="#">
-                                                            <img src="assets/images/blog-image/blog-11.jpg" alt="">
+                                                            <img src="<?php echo base_url(); ?>assets/images/blog-image/blog-11.jpg" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -193,12 +193,12 @@
                         <div class="col-md-12">
                             <div class="tag-content">
                                 <ul>
-                                    <li><a href="#">Shop</a></li>
-                                    <li><a href="#">Bluecom</a></li>
-                                    <li><a href="#">GTS Network</a></li>
-                                    <li><a href="#">Cabo Hércules</a></li>
-                                    <li><a href="#">Lan Expert</a></li>
-                                    <li><a href="#">Transcend</a></li>
+                                    <li><a href="<?php echo base_url(); ?>shop">Shop</a></li>
+                                    <li><a href="https://bluecom.com.br/">Bluecom</a></li>
+                                    <li><a href="https://gtshardsoft.com.br/">GTS Network</a></li>
+                                    <li><a href="https://cabohercules.com.br/">Cabo Hércules</a></li>
+                                    <li><a href="https://lanexpert.com.br/">Lan Expert</a></li>
+                                    <li><a href="https://transcend.us/">Transcend</a></li>
                                     <li><a href="#">Termos & Condições</a></li>
                                 </ul>
                             </div>

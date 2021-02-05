@@ -50,5 +50,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'home';
+$route['marca/lan-expert'] = 'marca/lan_expert';
+$route['marca/cabo-hercules'] = 'marca/cabo_hercules';
+$route['marca/gts-hard-soft'] = 'marca/gts_hard_soft';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

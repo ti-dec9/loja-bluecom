@@ -48,7 +48,7 @@
                 <div class="row">
                     <div class="col-md-2 d-flex">
                         <div class="logo align-self-center">
-                            <a href="#"><img class="img-responsive" src="assets/images/logo/logo-bluecom.png" alt="logo.jpg" /></a>
+                            <a href="#"><img class="img-responsive" src="<?php echo base_url(); ?>assets/images/logo/logo-bluecom.png" alt="logo.jpg" /></a>
                         </div>
                     </div>
                     <div class="col-md-4 align-self-center justify-content-end">
@@ -98,15 +98,12 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="header-menu-vertical">
-                            <h4 class="menu-title">Categorias</h4>
+                            <h4 class="menu-title">Marcas</h4>
                             <ul class="menu-content display-none">
-                                <li class="menu-item"><a href="#">Wirelless</a></li>
-                                <li class="menu-item"><a href="#">Segurança</a></li>
-                                <li class="menu-item"><a href="#"> Fibra Óptica</a></li>
-                                <li class="menu-item"><a href="#"> Ferramentas</a></li>
-                                <li class="menu-item"><a href="#"> Network</a></li>
-                                <li class="menu-item"><a href="#"> Rack & Acessórios</a></li>
-                                <li class="menu-item"><a href="#"> Marketing</a></li>
+                                <li class="menu-item"><a href="<?php echo base_url(); ?>marca/transcend">Transcend</a></li>
+                                <li class="menu-item"><a href="<?php echo base_url(); ?>marca/lan-expert">Lan Expert</a></li>
+                                <li class="menu-item"><a href="<?php echo base_url(); ?>marca/cabo-hercules"> Cabo Hérculos</a></li>
+                                <li class="menu-item"><a href="<?php echo base_url(); ?>marca/gts-hard-soft"> GTS Hard & Soft</a></li>
                             </ul>
                             <!-- menu content -->
                         </div>
@@ -115,30 +112,30 @@
                     <div class="col-lg-9">
                         <div class="header-horizontal-menu">
                             <ul class="menu-content">
-                                <li class="active menu-dropdown"><a href="#">Home</a></li>
+                                <li class="active menu-dropdown"><a href="<?php echo base_url(); ?>">Home</a></li>
                                 <li><a href="#">Quem Somos</a></li>
                                 <li class="menu-dropdown">
-                                    <a href="#">Produtos <i class="ion-ios-arrow-down"></i></a>
+                                    <a href="<?php echo base_url(); ?>shop">Produtos <i class="ion-ios-arrow-down"></i></a>
                                     <ul class="main-sub-menu">
                                         <li class="menu-dropdown position-static">
                                             <a href="#">Cabeamento <i class="ion-ios-arrow-right"></i></a>
                                             <ul class="main-sub-menu main-sub-menu-2">
-                                                <li><a href="#">Cabos Lan</a></li>
-                                                <li><a href="#">Caixa de superfícies</a></li>
-                                                <li><a href="#">Capa para conectores</a></li>
-                                                <li><a href="#">Conectores</a></li>
-                                                <li><a href="#">Descontinuado</a></li>
-                                                <li><a href="#">Espelho</a></li>
-                                                <li><a href="#">Patch Cords</a></li>
-                                                <li><a href="#">Patch Panels</a></li>
-                                                <li><a href="#">Tomadas Montadas</a></li>
+                                                <li><a href="<?php echo base_url(); ?>shop">Cabos Lan</a></li>
+                                                <li><a href="<?php echo base_url(); ?>shop">Caixa de superfícies</a></li>
+                                                <li><a href="<?php echo base_url(); ?>shop">Capa para conectores</a></li>
+                                                <li><a href="<?php echo base_url(); ?>shop">Conectores</a></li>
+                                                <li><a href="<?php echo base_url(); ?>shop">Descontinuado</a></li>
+                                                <li><a href="<?php echo base_url(); ?>shop">Espelho</a></li>
+                                                <li><a href="<?php echo base_url(); ?>shop">Patch Cords</a></li>
+                                                <li><a href="<?php echo base_url(); ?>shop">Patch Panels</a></li>
+                                                <li><a href="<?php echo base_url(); ?>shop">Tomadas Montadas</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Ferramentas</a></li>
-                                        <li><a href="#">Fibra Ótica</a></li>
-                                        <li><a href="#">Segurança</a></li>
-                                        <li><a href="#">Racks & Acessórios</a></li>
-                                        <li><a href="#">Wirelles</a></li>
+                                        <li><a href="<?php echo base_url(); ?>shop">Ferramentas</a></li>
+                                        <li><a href="<?php echo base_url(); ?>shop">Fibra Ótica</a></li>
+                                        <li><a href="<?php echo base_url(); ?>shop">Segurança</a></li>
+                                        <li><a href="<?php echo base_url(); ?>shop">Racks & Acessórios</a></li>
+                                        <li><a href="<?php echo base_url(); ?>shop">Wirelles</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#">Contato</a></li>
