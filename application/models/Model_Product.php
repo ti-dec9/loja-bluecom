@@ -19,7 +19,7 @@ class Model_Product extends CI_Model {
      * @param: $table = Nome da tabela
      */
     public function _selectAll() {
-        $this->sql = "SELECT T1.id, T1.title, T1.brand, T1.category, T1.description, T1.image, T2.name AS name_category FROM PRODUCT AS T1 INNER JOIN CATEGORY AS T2 WHERE T1.category = T2.id";
+        $this->sql = "SELECT T1.id, T1.title, T1.brand, T1.category, T1.description, T1.image, T2.name AS name_category FROM product AS T1 INNER JOIN category AS T2 WHERE T1.category = T2.id";
         $this->query = $this->db->query($this->sql);
         if ($this->query->num_rows() > 0) :
             $this->data = $this->query->result();
