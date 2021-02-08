@@ -168,491 +168,45 @@
                 <div id="tab-1" class="tab-pane active fade">
                     <!-- Arrivel slider start -->
                     <div class="arrival-slider-wrapper slider-nav-style-1">
-                        <div class="slider-single-item">
+                        <?php 
+                            if(empty($products_new)) :
+                            ?>
+                            <h4>Nenhum produto encontrado</h4>
+                            <?php
+                            else:
+                                $obj = new ArrayIterator($products_new);
+                                while($obj->valid()) :
+                        ?> 
+                        <div class="slider-single-item">                                               
                             <!-- Single Item -->
                             <article class="list-product text-center">
                                 <div class="product-inner">
                                     <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
+                                        <a href="<?php echo base_url(); ?>shop" class="thumbnail">
+                                            <img class="first-img" src="http://localhost:8080/sgi-bluecom/assets/img/products/<?php echo $obj->current()->image; ?>" alt="<?php echo $obj->current()->title; ?>" />
+                                        </a>                                        
                                     </div>
-                                    <ul class="product-flag">
-                                        <li class="new">-12%</li>
-                                    </ul>
                                     <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
+                                        <a class="inner-link" href="#"><span><?php echo $obj->current()->name_category; ?></span></a>
+                                        <h2><a href="#" class="product-link"><?php echo $obj->current()->title; ?></a></h2>
                                         <div class="pricing-meta">
-                                            <ul>
+                                            <!--<ul>
                                                 <li class="old-price">$23.90</li>
                                                 <li class="current-price">$21.51</li>
-                                            </ul>
+                                            </ul>-->
                                         </div>
                                     </div>
                                     <div class="cart-btn">
                                         <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
                                     </div>
                                 </div>
-                            </article>
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
+                            </article>   
                         </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="old-price">$23.90</li>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <ul class="product-flag">
-                                        <li class="new">-12%</li>
-                                    </ul>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="old-price">$23.90</li>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <ul class="product-flag">
-                                    </ul>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <ul class="product-flag">
-                                    </ul>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/as2-b.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <ul class="product-flag">
-                                        <li class="new">-12%</li>
-                                    </ul>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="old-price">$23.90</li>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Bobina c/ 1000m</span></a>
-                                        <h2><a href="#" class="product-link">Lan Expert Hercules 2.0 – Preto – 4 pares</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+                        <?php
+                            $obj->next();
+                            endwhile;
+                        endif;
+                        ?>                        
                     </div>
                     <!-- Arrivel slider end -->
                 </div>
@@ -699,7 +253,7 @@
                         <!-- Nav tabs -->
                         <ul class="nav nav-tabs sub-category">
                             <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tab-1">Cabeamento</a>
+                                <a class="nav-link active" data-toggle="tab" href="<?php echo base_url(); ?>">Cabeamento</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tab-2">Ferramentas</a>
@@ -718,6 +272,15 @@
                 <div id="tab-1" class="tab-pane active fade">
                     <!-- Arrivel slider start -->
                     <div class="arrival-slider-wrapper slider-nav-style-1">
+                        <?php 
+                            if(empty($products_variable)) :
+                            ?>
+                            <h6>Nenhum produto encontrado</h6>
+                            <?php
+                            else:
+                                $obj = new ArrayIterator($products_variable);
+                                while($obj->valid()) :
+                        ?>
                         <div class="slider-single-item">
                             <!-- Single Item -->
                             <article class="list-product text-center">
@@ -726,35 +289,11 @@
                                         <a href="#" class="thumbnail">
                                             <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
                                             <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                                <!-- <li>
-                                                    <a href="wishlist.html" title="Add to Wishlist"><i class="lnr lnr-heart"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="compare.html" title="Add to compare"><i class="lnr lnr-sync"></i></a>
-                                                </li> -->
-                                            </ul>
-                                        </div>
+                                        </a>                                       
                                     </div>
-                                    <ul class="product-flag">
-                                        <li class="new">-12%</li>
-                                    </ul>
                                     <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Lorem Ipsum</span></a>
-                                        <h2><a href="#" class="product-link">Lorem lorem lorem</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="old-price">$23.90</li>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
+                                        <a class="inner-link" href="#"><span><?php echo $obj->current()->name_category; ?></span></a>
+                                        <h2><a href="#" class="product-link"><?php echo $obj->current()->title; ?></a></h2>
                                     </div>
                                     <div class="cart-btn">
                                         <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
@@ -762,183 +301,11 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Lorem Ipsum</span></a>
-                                        <h2><a href="#" class="product-link">Lorem lorem lorem</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="old-price">$23.90</li>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Lorem Ipsum</span></a>
-                                        <h2><a href="#" class="product-link">Lorem lorem lorem</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Lorem Ipsum</span></a>
-                                        <h2><a href="#" class="product-link">Lorem lorem lorem</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <ul class="product-flag">
-                                    </ul>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Lorem Ipsum</span></a>
-                                        <h2><a href="#" class="product-link">Lorem lorem lorem</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="slider-single-item">
-                            <!-- Single Item -->
-                            <article class="list-product text-center">
-                                <div class="product-inner">
-                                    <div class="img-block">
-                                        <a href="#" class="thumbnail">
-                                            <img class="first-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                            <img class="second-img" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/cabo_gts_novo.jpg" alt="" />
-                                        </a>
-                                        <div class="add-to-link">
-                                            <ul>
-                                                <li>
-                                                    <a class="quick_view" href="#" data-link-action="quickview" title="Quick view" data-toggle="modal" data-target="#exampleModal">
-                                                        <i class="lnr lnr-magnifier"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <ul class="product-flag">
-                                        <li class="new">-12%</li>
-                                    </ul>
-                                    <div class="product-decs">
-                                        <a class="inner-link" href="#"><span>Lorem Ipsum</span></a>
-                                        <h2><a href="#" class="product-link">Lorem lorem lorem</a></h2>
-                                        <div class="pricing-meta">
-                                            <ul>
-                                                <li class="old-price">$23.90</li>
-                                                <li class="current-price">$21.51</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="cart-btn">
-                                        <a href="#" class="add-to-curt" title="Solicitar Orçamento">Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
+                        <?php
+                            $obj->next();
+                            endwhile;
+                        endif;
+                        ?>                        
                     </div>
                     <!-- Arrivel slider end -->
                 </div>
@@ -1109,129 +476,6 @@
 
     <?php $this->load->view('includes/footer'); ?>
 
-
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12 col-xs-12 mb-lm-100px mb-sm-30px">
-                            <div class="quickview-wrapper">
-                                <!-- slider -->
-                                <div class="gallery-top">
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="">
-                                    </div>
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class=" gallery-thumbs">
-                                    <div class="single-slide">
-                                        <img class="img-responsive m-auto" src=http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg " alt=" ">
-                                    </div>
-                                    <div class="single-slide ">
-                                        <img class="img-responsive m-auto " src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg " alt=" ">
-                                    </div>
-                                    <div class="single-slide ">
-                                        <img class="img-responsive m-auto " src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg " alt=" ">
-                                    </div>
-                                    <div class="single-slide ">
-                                        <img class="img-responsive m-auto " src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg " alt=" ">
-                                    </div>
-                                    <div class="single-slide ">
-                                        <img class="img-responsive m-auto " src="http://www.bluecom.com.br/lojabluecom/storage/2018/04/gts-1.jpg " alt=" ">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 col-xs-12 ">
-                            <div class="product-details-content quickview-content ">
-                                <h2>GTS Hard & Soft GIGAMAX</h2>
-                                <p class="reference ">Ref.:<span> 53.5.1000.2</span></p>
-                                <div class="pro-details-rating-wrap ">
-                                    <div class="rating-product ">
-                                        <i class="ion-android-star "></i>
-                                        <i class="ion-android-star "></i>
-                                        <i class="ion-android-star "></i>
-                                        <i class="ion-android-star "></i>
-                                        <i class="ion-android-star "></i>
-                                    </div>
-                                    <span class="read-review "><a class="reviews " href="# ">Reviews (1)</a></span>
-                                </div>
-                                <!-- <div class="pricing-meta ">
-                                    <ul>
-                                        <li class="old-price not-cut ">18.90</li>
-                                    </ul>
-                                </div> -->
-                                <p class="quickview-para ">Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco</p>
-                                <!-- <div class="pro-details-size-color ">
-                                    <div class="pro-details-color-wrap ">
-                                        <span>Color</span>
-                                        <div class="pro-details-color-content ">
-                                            <ul>
-                                                <li class="blue "></li>
-                                                <li class="maroon active "></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="pro-details-quality ">
-                                    <div class="cart-plus-minus ">
-                                        <input class="cart-plus-minus-box " type="text " name="qtybutton " value="1 " />
-                                    </div>
-                                    <div class="pro-details-cart btn-hover ">
-                                        <a href="# "> + Solicitar Orçamento</a>
-                                    </div>
-                                </div>
-                                <!-- <div class="pro-details-wish-com ">
-                                    <div class="pro-details-wishlist ">
-                                        <a href="wishlist.html "><i class="ion-android-favorite-outline "></i>Add to wishlist</a>
-                                    </div>
-                                    <div class="pro-details-compare ">
-                                        <a href="compare.html "><i class="ion-ios-shuffle-strong "></i>Add to compare</a>
-                                    </div>
-                                </div> -->
-                                <div class="pro-details-social-info ">
-                                    <span>Compartilhar</span>
-                                    <div class="social-info ">
-                                        <ul>
-                                            <li>
-                                                <a href="# "><i class="ion-social-facebook "></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="# "><i class="ion-social-twitter "></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="# "><i class="ion-social-google "></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="# "><i class="ion-social-instagram "></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal end -->
     <!-- JS
 ============================================ -->
 

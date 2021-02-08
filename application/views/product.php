@@ -1,8 +1,6 @@
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    
-<!-- Mirrored from live.hasthemes.com/html/5/abelo-preview/abelo/single-product.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 Nov 2020 19:08:18 GMT -->
 <head>
         <meta charset="utf-8" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
